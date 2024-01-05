@@ -1,5 +1,12 @@
 # Checking out Supermarket Cart
-an implementation of a supermarket checkout that calculates the total price of purchased items.
+
+[![Python Version](https://img.shields.io/badge/python-3.10-brightgreen.svg)](https://python.org)
+[![FastAPI Version](https://img.shields.io/badge/fastapi-0.108-brightgreen.svg)](https://fastapi.tiangolo.com)
+-----------------------------------------------------------------------------------------------------------------
+An implementation of a supermarket checkout that calculates the total price of purchased items using Fast API.
+
+The APIs are deployed to test the entire functionality https://supermarket-checkout-gautam.koyeb.app/docs
+
 
 ## Case Description
  Implement the code for a supermarket checkout that calculates the total price of a number of items.
@@ -11,7 +18,7 @@ Our goods are priced individually. Some items are multi-priced: buy n of them, a
 you less than buying them individually. For example, item A might cost $50 individually, but this
 week we have a special offer: buy three A s and they will cost you $130.
 
-Here is an example of prices
+### Pricing Rules
 
 |Item |Unit Price |Special Price|
 | --- |:---------:|:-------------|
@@ -21,15 +28,6 @@ Here is an example of prices
 | D   |   $15      |             |
 
 Our checkout accepts items in any order, so that if we scan a B, an A, and another B, we’ll recognize the two B’s and price them at 45 (for a total price so far of 95). Because the pricing changes frequently, we need to be able to pass in a set of pricing rules each time we start handling a checkout transaction.
-
-Here are some examples of cases:
-
-|Items |Total |
-| -------   |:-----------:|
-| A,B       |   $80       | 
-| A,A       |   $100      | 
-| A,A,A     |   $130      |       
-| C,D,B,A   |   $115      |            
 
 ### Solution FastAPI Checkout System
 
@@ -86,6 +84,8 @@ pytest
 ```
 
 # Folder Structure:
-├── main.py                 # Main FastAPI application file
-└── tests/                  # Folder containing test files
-    └── test_main.py        # Test file for API endpoints
+<img width="402" alt="image" src="https://github.com/Gautamaggrawal/supermarket-checkout/assets/22342470/f94b7fb2-0644-4801-a95e-41f496b8e3ef">
+
+
+
+
